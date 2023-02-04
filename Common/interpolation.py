@@ -39,6 +39,7 @@ def bilinear_value(img, pt):
     if x >= img.shape[1]-1: x = x - 1
 
     P1, P2, P3, P4 = np.float32(img[y:y+2,x:x+2].flatten())
+   
     alpha, beta = pt[1] - y,  pt[0] - x                   # 거리 비율
 
     M1 = P1 + alpha * (P3 - P1)                      # 1차 보간
