@@ -1,9 +1,6 @@
-'''조현근님'''
-import cv2
-import numpy as np
-import pytesseract
+import numpy as np, pytesseract, cv2 
 
-TESSERACT_PATH = "C:\Program Files\Tesseract-OCR\\tesseract.exe"
+TESSERACT_PATH = 'C:\Program Files\Tesseract-OCR'
 
 imgpath='termproject1/namecard.jpg'  #이미지 파일 경로
 win_name = "Image To Text"  #OpenCV 창 이름
